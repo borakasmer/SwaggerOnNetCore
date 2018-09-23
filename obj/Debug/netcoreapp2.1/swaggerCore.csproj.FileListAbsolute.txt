@@ -1,0 +1,14 @@
+/Users/borakasmer/swaggerCore/bin/Debug/netcoreapp2.1/swaggerCore.deps.json
+/Users/borakasmer/swaggerCore/bin/Debug/netcoreapp2.1/swaggerCore.runtimeconfig.json
+/Users/borakasmer/swaggerCore/bin/Debug/netcoreapp2.1/swaggerCore.runtimeconfig.dev.json
+/Users/borakasmer/swaggerCore/bin/Debug/netcoreapp2.1/swaggerCore.dll
+/Users/borakasmer/swaggerCore/bin/Debug/netcoreapp2.1/swaggerCore.pdb
+/Users/borakasmer/swaggerCore/obj/Debug/netcoreapp2.1/swaggerCore.csprojAssemblyReference.cache
+/Users/borakasmer/swaggerCore/obj/Debug/netcoreapp2.1/swaggerCore.csproj.CoreCompileInputs.cache
+/Users/borakasmer/swaggerCore/obj/Debug/netcoreapp2.1/swaggerCore.RazorAssemblyInfo.cache
+/Users/borakasmer/swaggerCore/obj/Debug/netcoreapp2.1/swaggerCore.RazorAssemblyInfo.cs
+/Users/borakasmer/swaggerCore/obj/Debug/netcoreapp2.1/swaggerCore.AssemblyInfoInputs.cache
+/Users/borakasmer/swaggerCore/obj/Debug/netcoreapp2.1/swaggerCore.AssemblyInfo.cs
+/Users/borakasmer/swaggerCore/obj/Debug/netcoreapp2.1/swaggerCore.RazorTargetAssemblyInfo.cache
+/Users/borakasmer/swaggerCore/obj/Debug/netcoreapp2.1/swaggerCore.dll
+/Users/borakasmer/swaggerCore/obj/Debug/netcoreapp2.1/swaggerCore.pdb
