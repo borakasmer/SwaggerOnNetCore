@@ -26,8 +26,8 @@ namespace swaggerCore
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
-        {   
-            //services.AddTransient<ISchollService, SchollService>();         
+        {
+            services.AddTransient<ISchollService, SchollService>();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("CoreSwagger", new Info
@@ -43,8 +43,21 @@ namespace swaggerCore
                     },
                     TermsOfService = "http://swagger.io/terms/"
                 });
+                c.AddSecurityRequirement(new Dictionary<string, IEnumerable<string>>
+                {
+                    { "Bearer", new string[] { } }
+                });
+            
+                c.AddSecurityDefinition("Bearer", new ApiKeyScheme()
+                {                    
+                    Description = "JWT Authorization header using the Bearer scheme. Example: \"Bearer {token}\"",
+                    Name = "Authorization",
+                    In = "header",
+                    Type = "apiKey",                                        
+                });                
             });
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
+            services.AddScoped<TokenFilter>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -58,7 +71,7 @@ namespace swaggerCore
             {
                 app.UseHsts();
             }
-            
+
             app.UseStaticFiles();
             app.UseSwagger()
             .UseSwaggerUI(c =>

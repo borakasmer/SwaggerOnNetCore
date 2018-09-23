@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace swaggerCore.Controllers
 {
+    [ServiceFilter(typeof(TokenFilter))]
     [Route("api/[controller]")]
     [ApiController]
     public class SchollController : ControllerBase
@@ -58,7 +59,7 @@ namespace swaggerCore.Controllers
             return schollService.GetStudentByName(name);
         }
 
-       [HttpPost("AddStudent")]
+        [HttpPost("AddStudent")]
         public void AddStudent([FromBody] Student student)
         {
             schollService.AddStudent(student);
